@@ -1,0 +1,23 @@
+#sally {
+    font-size: 40px;
+    padding-botton: 5px;
+    text-shadow: 1px 1px grey;
+  }
+  
+  body {
+    padding: 30px;
+    margin-botton: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  
+  #contact {
+    color: darkgreen;
+    text-decoration: underline;
+  }
+  
+  h2 {
+    color: blue;
+    font-family: arial;
+    text-decoration: underline;
+  }

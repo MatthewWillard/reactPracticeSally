@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>React Hello World</title>
+  <title>React Sally Resume</title>
+  <link href="index.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <body>
@@ -18,18 +19,68 @@
       src="https://unpkg.com/babel-standalone@6/babel.min.js">
     </script>
       <script type ="text/babel">
- function App(props) {
+ function App() {
   return (
-    <header>
-      {props.children}
-    </header>
+    <div>
+      <nav>
+    <ul>
+      <li><a href="#contact">Contact Info</a></li>
+      <li><a href="#ed">Education</a></li>
+      <li><a href="#employ">Employment History</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1 id="sally">Sally Student</h1>
+		<img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="Professional Sally"/>
+    <ul><h2 id="contact"> Contact Info </h2> </ul>
+    <address>
+      <li> Phone: 555-555-5555 </li>
+      <li> Email: SallyStudent@gmail.com</li>
+      </address>
+  </header>
+  <main>
+<h2 id="ed">Education</h2>
+<ul>
+  <li>New York University
+    <ul>
+      <li>September 2011 - April 2015</li>
+      <li>Marketing Degree</li>
+      <li>Spanish Minor</li>
+    </ul>
+  </li>
+  <li>Bloc Coding School
+    <ul>
+      <li> January 2019 - July 2019</li>
+      <li> Web Development Track</li>
+    </ul>
+  </li>
+</ul>
+  <h2 id="employ">Employment History</h2>
+  <ul>
+    <li> Pawnee Parks and Recreation
+      <ul>
+        <li>Recreation Intern</li>
+        <li>January 2018 - December 2018</li>
+        <li> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+      </ul>
+    </li>
+    <li> Dunder Mifflin Paper Co.
+      <ul>
+        <li>Salesman</li>
+        <li>March 2015 - December 2017</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+      </ul>
+    </li>
+  </ul>    
+    </main>
+    </div>
   );
-}
-// Nested elements inside the App
+};
+
+// Use App Component:
+// insert the App's element tree into the #application-root
 ReactDOM.render(
-  <App className='my-class'>
-    <h1>Current Page Title!</h1>
-  </App>,
+  <App />,
   document.querySelector('#application-root')
 );
       </script>
